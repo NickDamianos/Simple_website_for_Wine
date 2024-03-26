@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Greek Wine</title>
+        
+        <link rel="stylesheet" href="Css_layout.css">
+        <script src="JavaScript.js"></script>
+    
+    </head>
+    <body onload="checkName()">
+        <div id="logo">
+            <img src="fotos/logo.jpg">
+            <div id="menu_bar">
+            <a href="index.html">
+                <div id="menu_antikeimena" class="arx">
+                    Αρχική
+                </div>
+            </a>
+            <a href="wines.html">
+                <div id="menu_antikeimena" class="wine">
+                    Κρασιά
+                </div>
+            </a>
+            <a href="history.html">
+                <div id="menu_antikeimena" class="history">
+                    Ελλάδα <br> και το <br> Κρασί
+                </div>
+            </a>
+            <a href="epikinonia.html">
+                <div id="menu_antikeimena" class="about">
+                    Επικοινωνία
+                </div>
+            </a>
+            </div>
+        </div>
+        
+        
+        <div id="sel">
+        
+            <h1><span class="ico">Greek</span>Wine</h1>
+                <h2>Επικοινωνία</h2>
+                <a href="#main">
+                    <div class="per">
+                        Περισσότερα
+                    </div>
+                </a>    
+        
+        
+        
+        </div>
+        
+        
+        
+        <div id="main">
+            <div class="card"><h3>Προσωπικα Στοιχεια</h3><br>
+                <hr>
+                <br>
+                <img id="pic_profile" src="fotos/me.png" >
+                <div class="stx_txt" align="left">Όνομα : Nikolaos </div>
+                <div class="stx_txt" align="left">Επώνυμο : Damianos </div>
+                
+                <div class="stx_txt" align="left">Email: nick.damianos96@gmail.com </div>
+                
+            </div>
+            
+            <div class="card">  <h3>Επικοινωνία</h3> <br>
+                <hr>
+                <br>
+                <form id="mailForm" method="get" enctype="text/plain">
+                    <label for="name">Όνομα</label>
+                    <input type="text" id="name" name="name" placeholder="Το όνομα σας">
+
+                    <label for="Thema">Θέμα</label>
+                    <input type="text" id="theme" name="theme" placeholder="Το θέμα του email σας">
+
+                    <label for="Email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Το email σας">
+
+                    <label for="To_Email">Το Email</label>
+                    <textarea id="subject" name="subject" placeholder="Το email.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit" onclick="sendEmail()">
+                </form>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>
